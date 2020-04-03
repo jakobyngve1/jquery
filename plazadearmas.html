@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+    <title>Lima</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- source w3 schools -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plazadearmas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="content">
+    <header>
+        <h1>What to do in Lima, Perú!</h1>
+    </header>
+        <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="barranco.html">Barranco</a>
+                <a href="herradura.html">Herradura</a>
+                <a href="plazadearmas.html" class="active">La Plaza de Armas</a>
+                <a href="transport.html">Transportation</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+            <main class="main">
+              <h1><center> La Plaza de Armas <center/></h1>
+                <h2><center>La Plaza de Armas is located in what is known as the Center of Lima. From this plaza, one can veiw the changing of the guard which occurs daily at noon.  <center/></h2>
+                  <img id="picture1" src="img/IMG_3760.jpg" alt="me" width="1200" height="1200">
+
+
+        </div>
+          </main>
+
+
+      </div>
+
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+                //all js goes in here
+                //the code below toggles between show hide
+                $("img").mouseover(function() {
+                      console.log(this.id);
+                      $("#"+this.id).addClass("ui-corner-flat");
+                  });
+
+              });
+      </script>
+
+
+        <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

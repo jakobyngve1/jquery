@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/suspiros.jpg);
+    background-size: 300px 200px;
+    /*background-color: #EA3F1A;*/
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
+
+  .main{
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+    </style>
+    grid-area: realBody;
+    background-color: white;
+    font-family: 'Comic Neue', cursive;
+    border-radius: 50%;
+
+  }
+
+  .ui-corner-flat {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.images{
+  left: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 110px;
+}
+
+  .sidebar{
+    grid-area: sidebar;
+    padding-top: 30px;
+  }
+
+  .footer{
+    grid-area: footer;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #EA3F1A;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+
+  .topnav a:hover {
+    background-color: #EA3F1A;
+    color: white;
+  }
+
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  min-height: 500px;
+  border-radius: 35px
+}
+
+header {
+  padding: 20px;
+  background-color: white;
+  font-family: 'Alfa Slab One';
+  color: black;
+  border-radius: 35px
+}
+/*
+.gridItems {
+  max-width: 1080px;
+  margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+
+    grid-template-areas:
+    "realBody sidebar"
+}
+*/
+hr {
+    display: block;
+    height: 1px;
+    border: 1;
+    border-top: 5px solid black;
+    margin: 50px;
+    padding: 0;
+    border-radius: 35px;
+}

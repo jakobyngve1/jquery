@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+    <title>Lima</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- source w3 schools -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/barranco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="content">
+    <header>
+        <h1>What to do in Lima, Perú!</h1>
+    </header>
+        <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="barranco.html" class="active">Barranco</a>
+                <a href="herradura.html">Herradura</a>
+                <a href="plazadearmas.html">La Plaza de Armas</a>
+                <a href="transport.html">Transportation</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+            <main class="main">
+              <h1><center> Barranco <center/></h1>
+                <hr>
+
+
+                <img id="picture1" src="img/IMG_3276.jpg" alt="me" width="250" height="280" class="images">
+                <img id="picture2" src="img/IMG_3693.jpg" alt="me" width="250" height="280" class="images">
+                <img id="picture3" src="img/IMG_3819.jpg" alt="me" width="250" height="280" class="images">
+
+                <h4 id="desc1"><center>Barranco is home to many murals painted on walls and buildings. This one can be seen approaching La Costa Verde.</center></h4>
+                <h4 id="desc2"><center>A monument in central Barranco.</center></h4>
+                <h4 id="desc3"><center>A view of the neighborhood from La Costa Verde.</center></h4>
+
+                <h2><center>Barranco, located to the south of the city center, is famed both for its nightlife, architecture, as well as being one of the most up and coming neighborhoods in the city. Its colonial style can be seen in its library along with the many mansions of the former elite that line the streets. There is a large youth presence and the whole neighborhood sits right on the ocean. <center/></h2>
+
+        </div>
+
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+                //all js goes in here
+                //the code below toggles between show hide
+                $("#desc1").hide();
+                $("#desc2").hide();
+                $("#desc3").hide();
+
+                $("#picture1").click(function() {
+                      console.log(this.id);
+                      $("#"+this.id).addClass("ui-corner-flat");
+                      $("#picture2").removeClass("ui-corner-flat");
+                      $("#picture3").removeClass("ui-corner-flat");
+
+
+                      $("#desc1").show();
+                      $("#desc2").hide();
+                      $("#desc3").hide();
+                  });
+
+                  $("#picture2").click(function() {
+                        console.log(this.id);
+                        $("#"+this.id).addClass("ui-corner-flat");
+                        $("#desc2").show();
+                        $("#desc1").hide();
+                        $("#desc3").hide();
+                        $("#picture1").removeClass("ui-corner-flat");
+
+                        $("#picture3").removeClass("ui-corner-flat");
+
+                    });
+
+                    $("#picture3").click(function() {
+                          console.log(this.id);
+                          $("#"+this.id).addClass("ui-corner-flat");
+                          $("#desc3").show();
+                          $("#desc1").hide();
+                          $("#desc2").hide();
+                          $("#picture1").removeClass("ui-corner-flat");
+                          $("#picture2").removeClass("ui-corner-flat");
+
+                      });
+
+              });
+      </script>
+</body>
+</html>
